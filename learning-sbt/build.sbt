@@ -23,3 +23,16 @@ val gitHeadCommitSha = taskKey[String] (
 )
 gitHeadCommitSha := Process("git rev-parse HEAD").lines.head
 
+val makeVersionProperties = taskKey[Seq[File]](
+  "Makes a version.properties file."
+)
+makeVersionProperties := {
+  val propFile =
+    new File((resourceManaged in Compile).value, "version.properties")
+  val content = "version=%s" format gitHeadCommitSha.value
+  IO.write(propFile, content)
+  Seq(propFile)
+}
+
+resourceGenerators in Compile +=
+  makeVersionProperties

@@ -7,7 +7,13 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$/learning-sbt" />
+            <option value="$PROJECT_DIR$/learning-sbt/common" />
+            <option value="$PROJECT_DIR$/learning-sbt/common/project" />
             <option value="$PROJECT_DIR$/learning-sbt/project" />
+            <option value="$PROJECT_DIR$/learning-sbt/subprojectOne" />
+            <option value="$PROJECT_DIR$/learning-sbt/subprojectOne/project" />
+            <option value="$PROJECT_DIR$/learning-sbt/subprojectTwo" />
+            <option value="$PROJECT_DIR$/learning-sbt/subprojectTwo/project" />
           </set>
         </option>
         <option name="sbtVersion" value="0.13.16" />

@@ -1,19 +1,34 @@
-name := "learning-sbt"
+import sbt.Keys.testOptions
 
-version := "1.0"
+name := "learning-sbt"
+version := "0.0.15"
 
 scalaVersion := "2.12.3"
 
 // This comes from the specs2 website
 // The one from SBT in Action didn't work
-val testingLibrary = Seq("org.specs2" %% "specs2-core" % "3.9.1" % "test")
+val testingLibrary = Seq(
+  "org.specs2" %% "specs2-html" % "3.9.1",
+  "org.specs2" %% "specs2-core" % "3.9.1" % "test"
+)
 libraryDependencies ++= testingLibrary
+scalacOptions in Test ++= Seq("-Yratengepos")
 
 def LearningSbtProject(name: String): Project = Project(name, file(name)).settings(
     version := "1.0",
-    organization := "com.claudiordgz.learning-sbt",
-    libraryDependencies ++= testingLibrary
+    organization := "com.claudio.learning-sbt",
+    libraryDependencies ++= testingLibrary,
+    testOptions in Test += Tests.Argument(TestFrameworks.Specs2, "html"),
+    javaOptions in run += "-Xmx2048m",
+    fork in Test := true
   )
+
+// This is how you print something to the console
+lazy val hello = taskKey[Unit]("Prints 'Hello World'")
+hello := {
+  val sum = 1 + 2
+  println("sum: " + sum)
+}
 
 // console to test your code in scala inside sbt
 // test to run your tests

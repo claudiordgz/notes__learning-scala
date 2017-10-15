@@ -8,5 +8,8 @@ object AnotherLogicSpec extends Specification {
     "add three numbers" in {
       1 + 1 + 1 mustEqual 3
     }
+    "add four numbers" in {
+      1 + 1 + 1 + 1 mustEqual 4
+    }
   }
 }

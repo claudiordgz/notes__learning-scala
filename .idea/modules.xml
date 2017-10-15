@@ -2,9 +2,15 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/learning-sbt/.idea/modules/common.iml" filepath="$PROJECT_DIR$/learning-sbt/.idea/modules/common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/learning-sbt/.idea/modules/common-build.iml" filepath="$PROJECT_DIR$/learning-sbt/.idea/modules/common-build.iml" />
       <module fileurl="file://$PROJECT_DIR$/learning-sbt/.idea/modules/learning-sbt.iml" filepath="$PROJECT_DIR$/learning-sbt/.idea/modules/learning-sbt.iml" />
       <module fileurl="file://$PROJECT_DIR$/learning-sbt/.idea/modules/learning-sbt-build.iml" filepath="$PROJECT_DIR$/learning-sbt/.idea/modules/learning-sbt-build.iml" />
       <module fileurl="file://$PROJECT_DIR$/notes__learning-scala.iml" filepath="$PROJECT_DIR$/notes__learning-scala.iml" />
+      <module fileurl="file://$PROJECT_DIR$/learning-sbt/.idea/modules/subprojectOne.iml" filepath="$PROJECT_DIR$/learning-sbt/.idea/modules/subprojectOne.iml" />
+      <module fileurl="file://$PROJECT_DIR$/learning-sbt/.idea/modules/subprojectOne-build.iml" filepath="$PROJECT_DIR$/learning-sbt/.idea/modules/subprojectOne-build.iml" />
+      <module fileurl="file://$PROJECT_DIR$/learning-sbt/.idea/modules/subprojectTwo.iml" filepath="$PROJECT_DIR$/learning-sbt/.idea/modules/subprojectTwo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/learning-sbt/.idea/modules/subprojectTwo-build.iml" filepath="$PROJECT_DIR$/learning-sbt/.idea/modules/subprojectTwo-build.iml" />
     </modules>
   </component>
 </project>
